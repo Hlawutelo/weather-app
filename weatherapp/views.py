@@ -13,7 +13,7 @@ def get_weather(request):
             return JsonResponse({'error': 'Please provide a city name'}, status=400)
         
         # Your OpenWeatherMap API key
-        api_key = 'b0063ca7ff936c24c6ad0719076d03f3'
+        api_key = 'YOUR_API_KEY'
         url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
         
         try:
