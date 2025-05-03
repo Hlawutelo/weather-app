@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('/static/images/sky-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #0083b0;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#city-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#search-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #0083b0;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: #006a8e;
+}
+
+.weather-container {
+    display: none;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1rem;
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.location {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #0083b0;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.detail-value {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+}
+
+.error-container {
+    display: none;
+    color: #e74c3c;
+    background-color: #fde2e2;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.description {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
