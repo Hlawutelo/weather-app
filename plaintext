@@ -11,3 +11,33 @@ weather-project/
 └── weather_project/           # Project settings
     ├── settings.py           # Django settings
     └── urls.py               # Main URL routing
+
+
+
+    weather-app/
+├── db.sqlite3                # SQLite database file
+├── manage.py                 # Django management script
+├── static/                   # Static files (CSS, JS, images)
+│   ├── css/
+│   │   └── style.css         # Stylesheet for the app
+│   ├── js/
+│   │   └── script.js         # JavaScript for frontend functionality
+│   └── images/
+│       └── pexels-pixabay-531756.jpg  # Background image
+├── templates/
+│   └── index.html            # HTML template for the app
+├── weatherapp/               # Django app for weather functionality
+│   ├── views.py              # Contains the views for the app
+│   ├── urls.py               # URL routing for the app
+│   ├── models.py             # Placeholder for database models
+│   ├── tests.py              # Placeholder for unit tests
+│   ├── admin.py              # Placeholder for admin configuration
+│   ├── apps.py               # App configuration
+│   └── migrations/           # Database migrations
+├── weatherproject/           # Django project configuration
+│   ├── settings.py           # Project settings
+│   ├── urls.py               # Root URL configuration
+│   ├── wsgi.py               # WSGI configuration
+│   ├── asgi.py               # ASGI configuration
+│   └── __init__.py           # Project initialization
+└── README.md                 # Project docum
